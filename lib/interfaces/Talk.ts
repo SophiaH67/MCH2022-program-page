@@ -1,3 +1,4 @@
+import { Dayjs } from "dayjs";
 import Name from "./Name";
 
 export default interface Talk {
@@ -6,7 +7,8 @@ export default interface Talk {
   abstract: string;
   speakers: string[];
   track: number;
-  start: Date;
-  end: Date;
+  start: Dayjs;
+  end: Dayjs;
   room: number;
+  key: string;
 }
